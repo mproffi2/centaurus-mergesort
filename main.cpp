@@ -70,9 +70,5 @@ int main(int argc, char* argv[]) {
 
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(endTime - startTime).count();
 
-    // print array sizes and times
-    std::cout << "Array size: " << arraySize << std::endl;
-    std::cout << "Time (microseconds): " << duration << std::endl;
-
     return 0;
 }
