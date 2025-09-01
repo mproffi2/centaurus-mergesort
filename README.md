@@ -11,20 +11,22 @@ Example: cd "C:\Users\micai\OneDrive\Desktop\Centaurus-mergesort"
 main.exe          # default array size = 10
 main.exe 50       # array size = 50
 
-# Merge Sort on Centaurus
 
-## Commands
-
-ssh mproffi2@hpc-student.uncc.edu
-
-Clone repo
+## Centaurus Instructions
 
 git clone https://github.com/mproffi2/centaurus-mergesort.git
 cd centaurus-mergesort
 
-module load gcc
-make
+Load GCC compiler: module load gcc
 
-sbatch run_benchmark.sh
 
-cat benchmark_output.txt
+Compile program: make
+
+
+Run benchmark: sbatch run_benchmark.sh
+
+
+Check job status: squeue -u mproffi2
+
+
+View results: cat benchmark_output.txt
