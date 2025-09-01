@@ -63,13 +63,6 @@ int main(int argc, char* argv[]) {
     for (int i = 0; i < arraySize; i++)
         numbers.push_back(rand() % 100);
 
-    // print array before sorting
-    std::cout << "Array before sorting: ";
-    for (int n : numbers) std::cout << n << " ";
-    std::cout << std::endl;
-
-    std::cout << "Sorting now...\n";
-
     // timing
     auto startTime = std::chrono::high_resolution_clock::now();
     mergeSort(numbers, 0, arraySize - 1);
@@ -77,12 +70,9 @@ int main(int argc, char* argv[]) {
 
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(endTime - startTime).count();
 
-    // print array after sorting
-    std::cout << "Array after merge sort:       ";
-    for (int n : numbers) std::cout << n << " ";
-    std::cout << std::endl;
-
-    std::cout << "Time to sort: " << duration << " microseconds" << std::endl;
+    // print array sizes and times
+    std::cout << "Array size: " << arraySize << std::endl;
+    std::cout << "Time (microseconds): " << duration << std::endl;
 
     return 0;
 }
