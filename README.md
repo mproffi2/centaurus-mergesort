@@ -34,3 +34,7 @@ View results: cat benchmark_output.txt
 plot points: python3 plot.py
 
 Download png of plot: scp -o MACs=hmac-sha2-256 mproffi2@hpc-student.uncc.edu:/users/mproffi2/centaurus-mergesort/benchmark_plot.png C:\Users\micai\Downloads\
+
+## RESULTS
+
+The results made sense to me, it took longer to sort the bigger the array.
