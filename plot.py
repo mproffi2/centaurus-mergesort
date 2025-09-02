@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 
-# Lists to hold data
 sizes = []
 times_ms = []
 
@@ -18,8 +17,8 @@ plt.figure(figsize=(8,6))
 plt.plot(sizes, times_ms, marker='o', linestyle='-')
 plt.xscale('log')
 plt.yscale('log')
-plt.xlabel("Array Size (log scale)")
-plt.ylabel("Time (ms) (log scale)")
+plt.xlabel("Array Size")
+plt.ylabel("Time (ms)")
 plt.title("Merge Sort Benchmark")
 plt.grid(True, which="both", ls="--")
 plt.tight_layout()
