@@ -10,7 +10,7 @@
 g++ -std=c++11 -O2 main.cpp -o mergeSort
 
 # Array sizes (powers of 10)
-sizes=(10 100 1000 10000 100000 1000000 10000000 100000000 1000000000)
+sizes=(10 100 1000 10000 100000 1000000 10000000 100000000)
 
 # Loop over sizes
 for size in "${sizes[@]}"
