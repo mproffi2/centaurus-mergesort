@@ -59,7 +59,7 @@ int main(int argc, char* argv[]) {
 
     std::vector<int> numbers;
 
-    // generate random numbers 0-99
+    // generate random numbers 
     for (int i = 0; i < arraySize; i++)
         numbers.push_back(rand() % 100);
 
